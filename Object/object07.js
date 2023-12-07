@@ -52,7 +52,14 @@ let gr = [
     },
 ];
 
+// let fastSort = (a, b)=>{
+//     return a - b;
+// }
+// gr.sort((a,b) => a -b);
+
 let fastSort = (a, b)=>{
-    return a - b;
-}
-gr.sort((a,b) => a -b);
+    return a.num - b.num;
+    }
+    gr.sort(fastSort);
+    console.log(gr);
+    console.log('stop');
